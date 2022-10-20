@@ -5,21 +5,46 @@
     --accent-color: #2196F3;
     --additional-color: #757575;
 }
+
 body {
     font-family: "Roboto", sans-serif, system-ui; 
     background-color: var(--primere-background-color);
     color: var(--primary-text-color);
     font-style: normal;
    }
+ul {
+    padding: 0;
+    margin: 0;
+}
 li {
     list-style-type: none;
       /* Прибираємо маркери */
-  }
+      }
+
+nav{
+    padding: 0;
+    margin: 0;
+}
  a
    {text-decoration: none;
     /* прибираємо підкреслення */}
-h1 {
-    color: var(--additional-text-color);
+h1,
+h2,
+h3 {
+    /* скидаємо на заголовках відступи */
+    padding: 0 auto;
+    margin: 0;
+}
+p{
+    padding: 0;
+    margin: 0 auto;
+}
+.contanier{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid blue;
+    
 }
 /* Шапка head */
 .logo-link {
@@ -42,6 +67,8 @@ h1 {
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
     }
+  
+
    .address-item a {
         color: var(--additional-color);
         font-size: 14px;
@@ -75,18 +102,25 @@ h1 {
     text-align: center;
     letter-spacing: 0.03em;}
 /* секція замовлення послуг */
-.box-service-order {
+.service-hero {
 background-color: #2F303A;
+text-align: center;
+margin-bottom: 94px;
+padding-top: 200px;
+padding-bottom: 200px;
 }
-.box-service-order h1 {
+.service-hero > h1 {
     color: var(--additional-text-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    margin: auto ;
+    margin-bottom: 30px;
+    width: 696px;
 }
+
 .btn-service {
     background-color: var(--accent-color) ;
     color: var(--additional-text-color);
@@ -94,27 +128,50 @@ background-color: #2F303A;
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.06em;
-    display: flex;
-    align-items: center;
-    text-align: center;
+    margin: 0 auto;
+    padding: 10px 32px;
+    /* margin-bottom: 200px; */
+    outline:#2F303A
+
    }
-  
+
+
 /* секція щодо переліку особливостей */
+.box-detail{
+    margin-bottom: 94px;
+}
 .box-detail .title {
-    color: var(--additional-text-color);
+    color: transparent;
 }
 
 /* секція галереї робіт */
-
+.box-list-work > h2{
+    margin-bottom: 50px;
+}
+.box-list-work{
+    margin-bottom: 94px;
+}
 /* секція щодо команди студії*/
 .box-teams {
     background-color: #F5F4FA;
     line-height: 1.2;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
-
+.box-teams > h2{
+    margin-bottom: 50px;
+}
+.team-foto {
+    margin-bottom: 30px;
+}
+.subtitle-foto {
+    margin-bottom: 10;
+}
 /* підвал сторінки footer */
 .my-footer{
 background: #2F303A;
+padding-top: 60px;
+padding-bottom: 60px;
 }
 .my-footer .logo-link{
     color: var(--additional-text-color);
@@ -122,13 +179,21 @@ background: #2F303A;
  .footer-address{
     font-style:normal
  }
+ .logo-link > span{ 
+    display: inline-block;
+    margin-bottom: 20px;
+    /* outline: 2px solid #F5F4FA; */
+ }
 .address{
 color: var(--additional-text-color);
 font-size: 14px;
 line-height: 1.8;
 letter-spacing: 0.03em;
+margin-bottom: 9px;
 }
-
+.footer>.address-item{
+    margin-bottom: 9px;
+}
 /* портфоліо */
 
 .portfolio-btn {
