@@ -1,6 +1,6 @@
 :root{
     --primary-text-color: #212121;
-    --primere-background-color: #ffffff;
+    --primary-background-color: #ffffff;
     --additional-text-color: #ffffff;
     --accent-color: #2196F3;
     --additional-color: #757575;
@@ -8,7 +8,7 @@
 
 body {
     font-family: "Roboto", sans-serif, system-ui; 
-    background-color: var(--primere-background-color);
+    background-color: var(--primary-background-color);
     color: var(--primary-text-color);
     font-style: normal;
    }
@@ -20,7 +20,6 @@ li {
     list-style-type: none;
       /* Прибираємо маркери */
       }
-
 nav{
     padding: 0;
     margin: 0;
@@ -32,22 +31,29 @@ h1,
 h2,
 h3 {
     /* скидаємо на заголовках відступи */
-    padding: 0 auto;
+    padding: 0 ;
     margin: 0;
 }
 p{
     padding: 0;
-    margin: 0 auto;
+    margin: 0 ;
 }
 .contanier{
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     outline: 2px solid blue;
-    
+    margin-left: auto;
+    margin-right: auto;
+     
 }
 /* Шапка head */
+ /* .pagе-header .contanier{
+    display: flex;
+   
+} */
 .logo-link {
+    
     font-family: 'Raleway',sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -59,6 +65,15 @@ p{
 .logo-first {
     color: var(--accent-color);
 }
+.header-nav{
+    /* display: flex; */
+    align-items: center;
+   
+}
+.nav-list{
+    /* display: flex; */
+    align-items: center;
+}
 .nav_link
  {
     font-weight: 500;
@@ -67,7 +82,10 @@ p{
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
     }
-  
+.address-list{
+    /* display: flex; */
+    align-items: center;
+}
 
    .address-item a {
         color: var(--additional-color);
@@ -105,20 +123,20 @@ p{
 .service-hero {
 background-color: #2F303A;
 text-align: center;
-margin-bottom: 94px;
-padding-top: 200px;
-padding-bottom: 200px;
 }
-.service-hero > h1 {
+.service-hero  h1 {
     color: var(--additional-text-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    margin: auto ;
+    padding-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 30px;
     width: 696px;
+    
 }
 
 .btn-service {
@@ -130,13 +148,17 @@ padding-bottom: 200px;
     letter-spacing: 0.06em;
     margin: 0 auto;
     padding: 10px 32px;
-    /* margin-bottom: 200px; */
+    margin-bottom: 200px; 
     outline:#2F303A
 
    }
 
 
 /* секція щодо переліку особливостей */
+.box-detail {
+    margin-top: 94px;
+}
+
 .box-detail{
     margin-bottom: 94px;
 }
@@ -169,9 +191,9 @@ padding-bottom: 200px;
 }
 /* підвал сторінки footer */
 .my-footer{
-background: #2F303A;
-padding-top: 60px;
-padding-bottom: 60px;
+    background: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .my-footer .logo-link{
     color: var(--additional-text-color);
@@ -195,30 +217,64 @@ margin-bottom: 9px;
     margin-bottom: 9px;
 }
 /* портфоліо */
+.portfolio-main{
+        margin-top: 94px;
+        outline: 2px solid blue;
+}
 
+.portfolio-work ul {
+    margin-bottom: 30px;
+}
 .portfolio-btn {
+    /* display: inline-block; */
     font-weight: 500;
     font-size: 16px;
     line-height: 1.7;
     cursor: pointer;
     text-align: center;
     letter-spacing: 0.03em;
+    border-radius: 4px;
+    padding: 6px 22px;
+    min-width: 73px;
+    border-color: transparent;
+    background-color: #F5F4FA;
+    outline: 2px solid blue;
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus{
 background: var(--accent-color);
-color: var(--primere-background-color);
+color: var(--primary-background-color);
+border-color: transparent;
+}
+
+.portfolio-work > li{
+    margin-bottom: 50px;
+}
+.photo-work{
+    margin-bottom: 20px;
+    outline: 2px solid blue;
+}
+.card-work{
+outline: 2px solid blue;
 }
 .portfolio-title {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--primary-text-color);
+    margin-bottom: 4px;
+    outline: 2px solid blue;
 }
 .portfolio-text{
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.03em;
-    color: var(--additional-color);
-    
+    color: var(--additional-color); 
+    outline: 2px solid blue;
+}
+.card{
+    margin-left: 24px;
+    margin-right: 24px;
+   
+    outline: 2px solid blue;
 }
