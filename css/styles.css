@@ -45,17 +45,25 @@ p{
     /* outline: 2px solid blue; */
     margin-left: auto;
     margin-right: auto;
-     
+   
+}
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 /* Шапка head */
+.pagе-header{
+    border-bottom: 1px solid #ECECEC ;
+}
 .header-nav
 {
     display: flex;
-    
+   
 }
 .header-div{
     display: flex;
     align-items: center;
+    
 }
 .logo-link {
     margin-right: 90px;
@@ -147,7 +155,7 @@ background-color: #2F303A;
 text-align: center;
 }
 .service-hero  h1 {
-    padding-top: 200px;
+    padding-top: 94px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
@@ -178,27 +186,26 @@ text-align: center;
 
 
 /* секція щодо переліку особливостей */
-.box-detail {
-    margin-top: 94px;
-}
 .box-detail-list{
     display: flex;
     justify-content: space-between;
+   
 }
-.box-detail{
-    margin-bottom: 94px;
+.box-detail-list .item+.item{
+    margin-left: 30px;
+    
 }
 .box-detail .title {
     color: transparent;
 }
  .box-detail-list .subtitle{
     text-align:left ;
+   
  }
 /* секція галереї робіт */
 .list-work{
     display: flex;
-    justify-content: center;
-
+   flex-wrap: wrap;
 }
 .list-work .item+.item{
     margin-left: 30px;
@@ -207,7 +214,7 @@ text-align: center;
     margin-bottom: 50px;
 }
 .box-list-work{
-    margin-bottom: 94px;
+    /* margin-bottom: 94px; */
 }
 /* секція щодо команди студії*/
 .box-teams {
@@ -263,9 +270,9 @@ margin-bottom: 9px;
     margin-bottom: 9px;
 }
 /* портфоліо */
-.portfolio-main{
-        margin-top: 94px;
-        outline: 2px solid blue;
+.portfolio-main h1{
+    /* outline: 2px solid blue; */
+    color: transparent;
 }
 
 .portfolio-work ul {
@@ -273,6 +280,7 @@ margin-bottom: 9px;
 }
 .portfolio-btn {
     /* display: inline-block; */
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.7;
@@ -284,7 +292,7 @@ margin-bottom: 9px;
     min-width: 73px;
     border-color: transparent;
     background-color: #F5F4FA;
-    outline: 2px solid blue;
+    /* outline: 2px solid blue; */
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus{
@@ -302,10 +310,10 @@ border-color: transparent;
 }
 .photo-work{
     margin-bottom: 20px;
-    outline: 2px solid blue;
+    /* outline: 2px solid blue; */
 }
 .card-work{
-outline: 2px solid blue;
+/* outline: 2px solid blue; */
 }
 .portfolio-title {
     font-size: 18px;
@@ -313,18 +321,18 @@ outline: 2px solid blue;
     letter-spacing: 0.06em;
     color: var(--primary-text-color);
     margin-bottom: 4px;
-    outline: 2px solid blue;
+    /* outline: 2px solid blue; */
 }
 .portfolio-text{
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.03em;
     color: var(--additional-color); 
-    outline: 2px solid blue;
+    /* outline: 2px solid blue; */
 }
 .card{
     margin-left: 24px;
     margin-right: 24px;
    
-    outline: 2px solid blue;
+    /* outline: 2px solid blue; */
 }
