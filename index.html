@@ -21,7 +21,7 @@
 <div class="contanier header-div">
     <nav class="header-nav">
         <!--Logo-->
-        <a href="/" class="logo-link">
+        <a href="./" class="logo-link">
             <span class="logo-first">Web</span>Studio
         </a>
         <!--меню навігації-->
@@ -48,14 +48,15 @@
 <!-- унікальний контент сторінки main-->
 <main>
 
-<section class="section service-hero ">
-   <div class="contanier">
+<section class="service-hero ">
+   <div class=" contanier contanier-servis">
         <h1>Ефективні рішення для вашого бізнесу</h1>
         <button class="btn-service " type="button">Замовити послугу</button>
     </div>
 </section>
     <!--секція переліку особливостей-->
-<section class="section box-detail contanier">
+<section class="section box-detail ">
+<div class="contanier">
     <h2 class="title">Особливості</h2>
     <ul class="box-detail-list">
         <li class="item">
@@ -63,7 +64,7 @@
             <p class="text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
         </li>
         <li class="item">
-            <h3 class="subtitle" >ПУНКТУАЛЬНІСТЬ</h3>
+            <h3 class="subtitle">ПУНКТУАЛЬНІСТЬ</h3>
             <p class="text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
         </li>
         <li class="item">
@@ -75,46 +76,61 @@
             <p class="text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
         </li>
     </ul>
+</div>
+    
 </section>
 <!--секція галерея робіт-->
-<section class="section box-list-work contanier" >
-    <h2 class="title">Чим ми займаємося</h2>
-    <ul class="list-work">
-        <li class="item">
-            <img src="./images/box1.jpg" alt="фото роботи" width="370">
-        </li>
-        <li class="item">
-            <img src="./images/box2.jpg" alt="фото роботи" width="370">
-        </li>
-        <li class="item">
-            <img src="./images/box3.jpg" alt="фото роботи" width="370">
-        </li>
-    </ul>
+<section class=" box-list-work " >
+    <div class="contanier"> 
+        <h2 class="title">Чим ми займаємося</h2>
+        <ul class="list-work section">
+            <li class="item">
+                <img src="./images/box1.jpg" alt="фото роботи" width="370">
+            </li>
+            <li class="item">
+                <img src="./images/box2.jpg" alt="фото роботи" width="370">
+            </li>
+            <li class="item">
+                <img src="./images/box3.jpg" alt="фото роботи" width="370">
+            </li>
+        </ul>
+    </div>
 </section>
 <!--секція команда студії-->
 <section class="section box-teams">
+    
 <div class="contanier">
     <h2 class="title">Наша команда</h2>
-    <ul class="teams-work">
+       <ul class="teams-work">
         <li class="item" >
             <img src="./images/img1.jpg" alt="фото Product Designer" width="270" class="team-foto">
-            <h3 class="subtitle subtitle-foto">Ігор Дем'яненко </h3>
-            <p class="text">Product Designer</p>
+            <div class="box-subtitle">
+                <h3 class="subtitle subtitle-foto">Ігор Дем'яненко </h3>
+                <p class="text">Product Designer</p>
+            </div>
         </li>
         <li class="item" >
             <img src="./images/img2.jpg" alt="фото Frontend Developer" width="270" class="team-foto">
-            <h3 class="subtitle subtitle-foto">Ольга Рєпіна </h3>
-            <p class="text">Frontend Developer</p>
+            <div class="box-subtitle">
+                <h3 class="subtitle subtitle-foto">Ольга Рєпіна </h3>
+                <p class="text">Frontend Developer</p>
+            </div>
         </li>
         <li class="item">
             <img src="./images/img3.jpg" alt="фото Marketing" width="270" class="team-foto">
-            <h3 class="subtitle subtitle-foto">Микола Тарасов </h3>
-            <p class="text">Marketing</p>
+            <div class="box-subtitle" >
+                <h3 class="subtitle subtitle-foto">Микола Тарасов </h3>
+                <p class="text">Marketing</p>
+            </div>
+            
         </li>
         <li class="item">
             <img src="./images/img4.jpg" alt="фото UI Designer" width="270" class="team-foto">
-            <h3 class="subtitle subtitle-foto">Михайло Єрмаков</h3>
-            <p class="text">UI Designer</p>
+            <div class="box-subtitle">
+                <h3 class="subtitle subtitle-foto">Михайло Єрмаков</h3>
+                <p class="text">UI Designer</p>
+            </div>
+            
         </li>
     </ul>
 </div>
