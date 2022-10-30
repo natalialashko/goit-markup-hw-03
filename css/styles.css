@@ -100,6 +100,9 @@ p {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
+/* a [href="./portfolio.html"]{
+color: red;
+} */
 .header-div .address-list {
   display: flex;
   margin-left: auto;
@@ -125,7 +128,9 @@ p {
 .address-item a:focus {
   color: var(--accent-color);
 }
-
+.nav_link.primary{
+  color: var(--accent-color);
+}
 /*-----------унікальний контент сторінки main */
 .title {
   font-size: 36px;
@@ -138,6 +143,10 @@ p {
   color: var(--additional-color);
   font-size: 14px;
   /* letter-spacing: 0.03em; */
+}
+.img {
+  display: block;
+  max-width: 100%;
 }
 /*----------------- секція замовлення послуг */
 .service-hero {
@@ -196,7 +205,6 @@ p {
 .box-detail-list .subtitle {
   margin-bottom: 10px;
 
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -206,14 +214,13 @@ p {
 
 .box-detail-list .text {
   line-height: 1.7143;
-  letter-spacing: 0.03em;
-}
+ 
+  }
 
 /*------------------- секція галереї робіт */
 .box-list-work .title{
- 
- 
-}
+ margin-bottom: 50px;
+ }
 .list-work {
   display: flex;
   flex-wrap: wrap;
@@ -229,10 +236,9 @@ p {
   padding-bottom: 94px;
 }
 .box-teams .title {
- 
-  margin-bottom: 50px;
+   margin-bottom: 50px;
 }
-.box-teams .item {
+.teams-work .item {
   background-color: var(--primary-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -258,6 +264,7 @@ p {
 }
 .teams-work .text {
   text-align: center;
+  font-size: 16px;
 }
 /*------------ підвал сторінки footer -------*/
 .my-footer {
@@ -271,10 +278,11 @@ p {
 .footer-address {
   font-style: normal;
 }
-.logo-link .logo-footer {
+.contanier-footer .logo-link{
   display: inline-block;
   margin-bottom: 20px;
 }
+
 .address {
   color: var(--additional-text-color);
   font-size: 14px;
@@ -282,10 +290,14 @@ p {
   letter-spacing: 0.03em;
   margin-bottom: 9px;
 }
-.footer > .address-item {
+.footer .address-item:not(:last-child) {
   margin-bottom: 9px;
 }
+
 /*---------------портфоліо----------- */
+.portfolio-work{
+  background: #F5F5F5;
+}
 .portfolio-main h1 {
   /* outline: 2px solid blue; */
   display: none;
@@ -300,22 +312,24 @@ p {
 }
 
 .portfolio-btn {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.7;
-  cursor: pointer;
-  text-align: center;
-  letter-spacing: 0.03em;
-  border-radius: 4px;
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 22px;
   padding-right: 22px;
+  background: #F5F4FA;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
 
   min-width: 73px;
   border-color: transparent;
-  background-color: #f5f4fa;
-  /* outline: 2px solid blue; */
+  
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
@@ -329,20 +343,19 @@ p {
   gap: 30px;
 }
 .photo-work {
-  display: block;
-}
-div.card-text {
   border: 1px solid #eeeeee;
   border-top-color: transparent;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-right: 24px;
-  padding-left: 24px;
+  
 }
 .portfolio-work > li {
   margin-bottom: 50px;
 }
-
+.card-text{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
 /* .card-work {
   outline: 2px solid blue;
 } */
@@ -356,7 +369,7 @@ div.card-text {
 }
 .portfolio-text {
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--additional-color);
   /* outline: 2px solid blue; */
