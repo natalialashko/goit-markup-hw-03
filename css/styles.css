@@ -29,15 +29,13 @@ a {
 }
 h1,
 h2,
-h3 {
+h3, 
+p {
   /* скидаємо на заголовках відступи */
   padding: 0;
   margin: 0;
 }
-p {
-  padding: 0;
-  margin: 0;
-}
+
 .contanier {
   width: 1200px;
   padding-left: 15px;
@@ -67,7 +65,7 @@ p {
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.2;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: #000000;
 }
@@ -100,9 +98,7 @@ p {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
-/* a [href="./portfolio.html"]{
-color: red;
-} */
+
 .header-div .address-list {
   display: flex;
   margin-left: auto;
@@ -118,7 +114,9 @@ color: red;
 
 .address-link {
   color: var(--additional-color);
+  font-weight: 500;
   font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
@@ -131,6 +129,7 @@ color: red;
 .nav_link.primary{
   color: var(--accent-color);
 }
+
 /*-----------унікальний контент сторінки main */
 .title {
   font-size: 36px;
@@ -169,7 +168,7 @@ color: red;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-align: center;
-  /* text-transform: uppercase; */
+  text-transform: uppercase;
 }
 
 .btn-service {
@@ -218,6 +217,9 @@ color: red;
   }
 
 /*------------------- секція галереї робіт */
+.box-list-work{
+  padding-top: 0px;
+}
 .box-list-work .title{
  margin-bottom: 50px;
  }
@@ -231,12 +233,11 @@ color: red;
 /*-------------секція щодо команди студії*/
 .box-teams {
   background-color: #f5f4fa;
-  line-height: 1.2;
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+  }
+
 .box-teams .title {
    margin-bottom: 50px;
+   
 }
 .teams-work .item {
   background-color: var(--primary-background-color);
@@ -251,10 +252,12 @@ color: red;
 .teams-work .item + .item {
   margin-left: 30px;
 }
+.team-foto{
+  margin-bottom: 30px;
+}
 .teams-work .box-subtitle {
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+
 }
 .subtitle-foto{
   font-weight: 500;
@@ -262,9 +265,10 @@ color: red;
 .item .subtitle-foto {
   margin-bottom: 10px;
 }
-.teams-work .text {
+.box-subtitle .text {
   text-align: center;
   font-size: 16px;
+  margin-bottom: 30px;
 }
 /*------------ підвал сторінки footer -------*/
 .my-footer {
@@ -283,12 +287,16 @@ color: red;
   margin-bottom: 20px;
 }
 
-.address {
+.footer-address .address {
   color: var(--additional-text-color);
   font-size: 14px;
+  font-weight: 400;
   line-height: 1.8;
   letter-spacing: 0.03em;
   margin-bottom: 9px;
+}
+.footer-address.footer{
+  font-weight: 400;
 }
 .footer .address-item:not(:last-child) {
   margin-bottom: 9px;
@@ -296,7 +304,7 @@ color: red;
 
 /*---------------портфоліо----------- */
 .portfolio-work{
-  background: #F5F5F5;
+  /* background: #F5F5F5; */
 }
 .portfolio-main h1 {
   /* outline: 2px solid blue; */
@@ -310,7 +318,6 @@ color: red;
 .list-portfolio li + li {
   margin-left: 8px;
 }
-
 .portfolio-btn {
   padding-top: 6px;
   padding-bottom: 6px;
@@ -342,7 +349,8 @@ color: red;
   flex-wrap: wrap;
   gap: 30px;
 }
-.photo-work {
+.link-portfolio
+ {
   border: 1px solid #eeeeee;
   border-top-color: transparent;
   
@@ -351,26 +359,23 @@ color: red;
   margin-bottom: 50px;
 }
 .card-text{
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 24px;
+  
 }
-/* .card-work {
-  outline: 2px solid blue;
-} */
 .portfolio-title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
   margin-bottom: 4px;
-  /* outline: 2px solid blue; */
+ 
 }
 .portfolio-text {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--additional-color);
-  /* outline: 2px solid blue; */
+  
 }
