@@ -362,15 +362,12 @@ p {
   flex-wrap: wrap;
   gap: 30px;
 }
-.link-portfolio
+.portfolio >.card-work
  {
-  border: 1px solid #eeeeee;
+  border-bottom: 1px solid #EEEEEE;
   border-top-color: transparent;
   background: var(--primary-background-color) ;
   
-}
-.portfolio-work > li {
-  margin-bottom: 50px;
 }
 .card-text{
   padding-top: 20px;
@@ -386,7 +383,6 @@ p {
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
   max-width: 322px;
-  
 }
 .portfolio-text {
   font-size: 16px;
