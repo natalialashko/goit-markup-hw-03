@@ -366,23 +366,19 @@ p {
   flex-wrap: wrap;
   gap: 30px;
 }
-.portfolio >.card-work
- {
-  border: 1px solid #EEEEEE;
-  border-top-color: transparent;
-  background: var(--primary-background-color) ;
- 
+.link-portfolio{
+    display: block;
+    border-bottom: 1px solid #EEEEEE;
+    border-top-color: transparent;
+    background: var(--primary-background-color);
 }
-.img.photo-work{
- display: inline-block;
- border-bottom: 1px solid #EEEEEE
-}
+
  .card-text{
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
-  /* border-top:1px solid #EEEEEE;  */
+ 
 }
 .portfolio-title {
   margin-bottom: 4px;
