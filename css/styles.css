@@ -48,6 +48,19 @@ p {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+/* Симантичне приховування заголовків  */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /* Шапка head */
 .pagе-header {
   border-bottom: 1px solid #ececec;
@@ -60,7 +73,7 @@ p {
   align-items: center;
 }
 .logo-link {
-  /* margin-right: 90px; */
+
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -76,12 +89,12 @@ p {
   color: var(--accent-color);
 }
 .header-nav {
-  /* display: flex; */
+
   align-items: center;
 }
 .nav-list {
   display: flex;
-  /* align-items: center; */
+
 }
 .nav-list li + li {
   margin-left: 35px;
@@ -149,6 +162,7 @@ p {
   display: block;
   max-width: 100%;
 }
+  
 /*----------------- секція замовлення послуг */
 .service-hero {
   background-color: #2F303A;
@@ -191,10 +205,7 @@ p {
 }
 
 /*-----------секція щодо переліку особливостей */
-.box-detail .title {
-  /* тимчасово cхований заголовок */
-  display: none;
-}
+
 .box-detail-list {
   display: flex;
 }
@@ -203,7 +214,7 @@ p {
 }
 .box-detail-list .item + .item {
   margin-left: 30px;
-  /* outline: 2px solid blue; */
+  
 }
 
 .box-detail-list .subtitle {
@@ -303,8 +314,6 @@ p {
   color: var(--additional-text-color);
   font-size: 14px;
   font-weight: 400;
-  /* line-height: 1.8;
-  letter-spacing: 0.03em; */
   margin-bottom: 9px;
 }
 .address-link.footer-link{
@@ -319,10 +328,7 @@ p {
 .portfolio-work{
   background: var(--primary-background-color)
 }
-.portfolio-main h1 {
-  /* outline: 2px solid blue; */
-  display: none;
-}
+
 .list-portfolio {
   display: flex;
   justify-content: center;
@@ -393,6 +399,5 @@ p {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--additional-color);
-  max-width: 322px;
-  
+  max-width: 322px; 
 }
